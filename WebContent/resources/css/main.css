@@ -26,6 +26,7 @@ img { border:0;}
 .content {flex-grow:1; height:100%; color:white; padding:10px;}
 .content .sector {margin-bottom:20px; border: 1px solid gray; padding:5px; background-color:rgba(0,0,0,0.5);}
 .content .sector h5 {font-size: 15px; color:orange; }
+.content .sector h4 {font-size: 15px; color:red; }
 /* .content table {width: 90%; border-collapse: collapse; font-size: small; }
 .content table, th, td {border: 1px solid white; text-align: center;} */
 .content th {background-color:rgb(173, 176, 179); color: black; text-align:center;}

@@ -12,6 +12,6 @@
 	</head>
 
 	<body>
-		꼬부기 <img src="/webapp2/resources/img/myphoto01.png" width="100%"/>
+		꼬부기 <img src="<%=application.getContextPath()%>/resources/img/myphoto01.png" width="100%"/>
 	</body>
 </html>

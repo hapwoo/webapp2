@@ -1,6 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,21 +14,28 @@
 
 	<body>
 		<div class="wrap">
-			<jsp:include page="/WEB-INF/views/include/header.jsp"/>
+			<%-- 공통 헤더 --%>
+			<jsp:include page="/WEB-INF/views/include/header.jsp"/> <%-- 얘는 실행해서 붙여 넣음 --%>
+	
 			
+			<%-- 내용 --%>
 			<div class="mainCenter">
-		
+				<%-- 공통메뉴 --%>
 				<jsp:include page="/WEB-INF/views/include/menu.jsp"/>
 			
 				<div class="content">
 					<div class="sector">
-						<h5>개발 환경 구축</h5>
+						<h5>회원가입</h5>
 						<div>
-							교재를 참고해서 1장을 진행하면 됩니다.
+							<form method="post" action="join">
+							아이디:<input type="text"/> <br/>
+							이름:<input type="text"/> <br/>
+							패스워드:<input type="password"/> <br/>
+							POST 방식 :<button class="btn btn-info btn-sm">회원가입</button>
+							</form>
 						</div>
-						
 					</div>
-					
+				
 				</div>
 			</div>
 		</div>
